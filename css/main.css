@@ -16,7 +16,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 
 /*прибираємо крапку у списках*/
@@ -32,16 +31,21 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 /*властивості для посилань*/
 .link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+/*задаємо колір для контактів*/
+.link.contacts{
+  color: var(--primary-text-color);
 }
 
 /*зміна кольору при акценті*/
@@ -82,6 +86,7 @@ body {
 .section-title {
   color: var(--title-text-color);
   font-size: 36px;
+  letter-spacing: 0.03em;
 }
 
 /*паттерн для приховання заголовків*/
@@ -104,6 +109,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /*фон секції Наша команда*/
@@ -113,7 +119,7 @@ body {
 
 /*фон карток Наша команда*/
 .command-list {
-    background-color: var(--primary-background-color);
+  background-color: var(--primary-background-color);
 }
 
 /*властивості заголовків всередині секції Наша команда*/
@@ -122,12 +128,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /*властивості тексту всередині секції Наша команда*/
 .command-text {
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /*властивості кнопок фільтра*/
@@ -155,6 +163,7 @@ body {
 .examples-text {
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 
 /*зміни при ховері, фокусі на фільтрі*/
@@ -180,6 +189,7 @@ body {
   color: var(--primary-background-color);
   font-style: normal;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
