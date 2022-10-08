@@ -296,6 +296,7 @@ img {
 /*-------------- ПОРТФОЛІО ---------------------*/
 
 .portfolio-filter {
+  margin-bottom: 50px;
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -327,7 +328,6 @@ img {
 }
 
 .portfolio-examples {
-  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: var(--examples-gap);
@@ -340,9 +340,7 @@ img {
 }
 
 .portfolio-examples-card {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
 }
 
 /*властивості заголовків секції з прикладами (порфоліо)*/
@@ -363,8 +361,7 @@ img {
 
 /*фон футера*/
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 
   background-color: var(--hero-background-color);
 }
@@ -380,6 +377,10 @@ img {
 
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /*стилізуємо посилання у контактах футера*/
