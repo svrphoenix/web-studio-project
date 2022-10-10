@@ -121,14 +121,12 @@ img {
 /*загальний контейнер хедера*/
 .container.flex-container {
   display: flex;
-
   align-items: center;
 }
 
 /*контейнер навігації*/
 .header-nav {
   display: flex;
-  margin-right: auto;
 }
 
 /*список навігації*/
@@ -143,12 +141,13 @@ img {
 .header-contacts {
   display: flex;
   gap: 50px;
+  margin-left: auto;
 }
 
 /*загальний клас для посилань хедера*/
 .link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10%;
+  padding-bottom: 10%;
 
   font-weight: 500;
   line-height: 1.14;
@@ -173,34 +172,32 @@ img {
 /*-------------- ГЕРОЙ ---------------------*/
 /*фон секції герой*/
 .hero-section {
-  background-color: var(--hero-background-color);
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  text-align: center;
+  background-color: var(--hero-background-color);
 }
 
 /*заголовок героя*/
 .hero-title {
+  max-width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  max-width: 696px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*кнопка Героя*/
 .hero-button {
   min-width: 216px;
   height: 50px;
-  border-color: transparent;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -209,6 +206,10 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*-------------- ВЛАСТИВОСТІ ---------------------*/
@@ -315,6 +316,7 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
   border-radius: 4px;
   border-color: transparent;
 }
