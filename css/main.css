@@ -9,18 +9,61 @@
   --hero-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
 }
+
 /*властивості для body*/
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.17;
+}
+
+.section {
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+
+/*властивості для заголовків (утилітарний клас)*/
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  letter-spacing: 0.03em;
 }
 
 /*прибираємо крапку у списках*/
 .list {
   list-style: none;
+}
+
+/*властивості для посилань*/
+.link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/*паттерн для приховання заголовків*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*зміна кольору при акценті*/
+.link.current,
+.accent-logo,
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
 
 /*властивості для логотипу*/
@@ -34,30 +77,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*властивості для посилань*/
-.link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-/*задаємо колір для контактів*/
-.link.contacts{
+/*задаємо колір для посилань контактів*/
+.header-contacts-link {
   color: var(--primary-text-color);
 }
 
-/*зміна кольору при акценті*/
-.link.current,
-.accent,
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
+/*-------------- ГЕРОЙ ---------------------*/
 /*фон секції герой*/
-.hero {
+.hero-section {
   background-color: var(--hero-background-color);
 }
 
@@ -82,29 +109,11 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
-/*властивості для заголовків секцій*/
-.section-title {
-  color: var(--title-text-color);
-  font-size: 36px;
-  letter-spacing: 0.03em;
-}
 
-/*паттерн для приховання заголовків*/
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+/*-------------- ВЛАСТИВОСТІ ---------------------*/
 
 /*заголовок секції властивості*/
-.features-title {
+.features-list-title {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -112,6 +121,7 @@ body {
   letter-spacing: 0.03em;
 }
 
+/*-------------- НАША КОМАНДА ---------------------*/
 /*фон секції Наша команда*/
 .command-section {
   background-color: var(--secondary-background-color);
@@ -123,23 +133,23 @@ body {
 }
 
 /*властивості заголовків всередині секції Наша команда*/
-.command-title {
+.command-list-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 /*властивості тексту всередині секції Наша команда*/
-.command-text {
+.command-list-text {
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
+
+/*-------------- ПОРТФОЛІО ---------------------*/
 /*властивості кнопок фільтра*/
-.filter {
+.portfolio-filter-button {
   cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
@@ -151,8 +161,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+/*зміни при ховері, фокусі на фільтрі*/
+.active-button,
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
 /*властивості заголовків секції з прикладами (порфоліо)*/
-.examples-title {
+.portfolio-examples-title {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -160,18 +178,9 @@ body {
 }
 
 /*властивості тексту секції з прикладами (порфоліо)*/
-.examples-text {
+.portfolio-examples-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
-}
-
-/*зміни при ховері, фокусі на фільтрі*/
-.active-filter,
-.filter:hover,
-.filter:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
 }
 
 /*фон футера*/
@@ -181,28 +190,29 @@ body {
 
 /*змінюємо лого у футері*/
 .footer > .logo {
-  color: var(--primary-background-color);
+  color: var(--white-color);
 }
 
-/*стилізуємо address*/
-.address {
-  color: var(--primary-background-color);
+/*стилізуємо контакти*/
+.footer-contacts {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+/*стилізуємо посилання у контактах футера*/
+.footer-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
-/*стилізуємо посилання у футері*/
-.footer .link {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
+/*білий колір посилання на карту*/
+.footer-contacts-link.map {
+  color: var(--white-color);
 }
 
 /*зміни при ховері, фокусі на посиланнях у футері*/
-.address:hover,
-.address:focus,
-.footer .link:hover,
-.footer .link:focus {
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
   color: var(--accent-color);
 }

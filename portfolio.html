@@ -15,46 +15,54 @@
   </head>
   <body>
     <!--Шапка сайту-->
-    <header>
+    <header class="header">
       <nav>
         <a class="logo" lang="en" href="./index.html"
-          ><span class="accent">Web</span>Studio</a
+          ><span class="accent-logo">Web</span>Studio</a
         >
-        <ul class="list">
-          <li><a class="link" href="./index.html">Студія</a></li>
-          <li><a class="link current" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="link" href="#">Контакти</a></li>
+        <ul class="header-list list">
+          <li class="header-item"><a class="link" href="./index.html">Студія</a></li>
+          <li class="header-item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
+          <li class="header-item"><a class="link" href="#">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="list">
-        <li><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="header-contacts list">
+        <li>
+          <a class="header-contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="header-contacts-link link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <!--Це блок main-->
     <main>
-      <section>
-        <h2 class="visually-hidden">Наші роботи</h2>
+      <section class="portfolio-section section">
+        <h2 class="portfolio-title section-title visually-hidden">Наші роботи</h2>
         <!--Фільтр робіт-->
-        <ul class="list">
+        <ul class="portfolio-filter list">
           <li>
-            <button class="filter active-filter" type="button">Усі</button>
+            <button class="portfolio-filter-button active-button" type="button">Усі</button>
           </li>
-          <li><button class="filter" type="button">Веб-сайти</button></li>
-          <li><button class="filter" type="button">Додатки</button></li>
-          <li><button class="filter" type="button">Дизайн</button></li>
-          <li><button class="filter" type="button">Маркетинг</button></li>
+          <li><button class="portfolio-filter-button" type="button">Веб-сайти</button></li>
+          <li><button class="portfolio-filter-button" type="button">Додатки</button></li>
+          <li><button class="portfolio-filter-button" type="button">Дизайн</button></li>
+          <li><button class="portfolio-filter-button" type="button">Маркетинг</button></li>
         </ul>
         <!--Перелік робіт-->
-        <ul class="list">
+        <ul class="portfolio-examples list">
           <li>
             <img
               src="./images/project1.jpg"
               alt="Вебсайт, на якому фото з командою"
               width="370"
             />
-            <h3 class="examples-title">Технокряк</h3>
-            <p class="examples-text">Веб-сайт</p>
+            <h3 class="portfolio-examples-title">Технокряк</h3>
+            <p class="portfolio-examples-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -62,23 +70,23 @@
               alt="Постер гри в баскетбол"
               width="370"
             />
-            <h3 class="examples-title">Постер New Orlean vs Golden Star</h3>
-            <p class="examples-text">Дизайн</p>
+            <h3 class="portfolio-examples-title">Постер New Orlean vs Golden Star</h3>
+            <p class="portfolio-examples-text">Дизайн</p>
           </li>
           <li>
             <img src="./images/project3.jpg" alt="Лого ресторану" width="370" />
             <h3 class="examples-title">Ресторан Seafood</h3>
-            <p class="examples-text">Додаток</p>
+            <p class="portfolio-examples-text">Додаток</p>
           </li>
           <li>
             <img src="./images/project4.jpg" alt="Навушники" width="370" />
-            <h3 class="examples-title">Проєкт Prime</h3>
-            <p class="examples-text">Маркетинг</p>
+            <h3 class="portfolio-examples-title">Проєкт Prime</h3>
+            <p class="portfolio-examples-text">Маркетинг</p>
           </li>
           <li>
             <img src="./images/project5.jpg" alt="Коробки" width="370" />
             <h3 class="examples-title">Проєкт Boxes</h3>
-            <p class="examples-text">Додаток</p>
+            <p class="portfolio-examples-text">Додаток</p>
           </li>
           <li>
             <img
@@ -86,8 +94,8 @@
               alt="Монітор з картинкою сайту"
               width="370"
             />
-            <h3 lang="en" class="examples-title">Inspiration has no Borders</h3>
-            <p class="examples-text">Веб-сайт</p>
+            <h3 lang="en" class="portfolio-examples-title">Inspiration has no Borders</h3>
+            <p class="portfolio-examples-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -95,7 +103,7 @@
               alt="Картинка з журналом"
               width="370"
             />
-            <h3 class="examples-title">Видання Limited Edition</h3>
+            <h3 class="portfolio-examples-title">Видання Limited Edition</h3>
             <p class="examples-text">Дизайн</p>
           </li>
           <li>
@@ -104,8 +112,8 @@
               alt="Картинка з ярликом"
               width="370"
             />
-            <h3 class="examples-title">Проєкт LAB</h3>
-            <p class="examples-text">Маркетинг</p>
+            <h3 class="portfolio-examples-title">Проєкт LAB</h3>
+            <p class="portfolio-examples-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -113,8 +121,8 @@
               alt="Картинка, на якій ноутбук із додатком для бізнесу"
               width="370"
             />
-            <h3 lang="en" class="examples-title">Growing Business</h3>
-            <p class="examples-text">Додаток</p>
+            <h3 lang="en" class="portfolio-examples-title">Growing Business</h3>
+            <p class="portfolio-examples-text">Додаток</p>
           </li>
         </ul>
       </section>
@@ -122,7 +130,7 @@
     <!--Підвал сайту-->
     <footer class="footer">
       <a class="logo" lang="en" href="./index.html"
-        ><span class="accent">Web</span>Studio</a
+        ><span class="accent-logo">Web</span>Studio</a
       >
       <address>
         <ul class="list">
