@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--Шапка сайту-->
+    <header class="header">
+      <div class="container flex-container">
+        <nav class="header-nav">
+          <a class="logo" lang="en" href="./index.html"
+            ><span class="accent-logo">Web</span>Studio</a
+          >
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="link" href="./index.html">Студія</a>
+            </li>
+            <li class="header-item">
+              <a class="link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-item"><a class="link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts list">
+          <li class="contacts-item">
+            <a
+              class="header-contacts-link link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-item">
+            <a class="header-contacts-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--Це блок main-->
+    <main>
+      <section class="portfolio-section section">
+        <div class="container">
+          <h2 class="portfolio-title section-title visually-hidden">
+            Наші роботи
+          </h2>
+          <!--Фільтр робіт-->
+          <ul class="portfolio-filter list">
+            <li class="portfolio-filter-item">
+              <button
+                class="portfolio-filter-button active-button"
+                type="button"
+              >
+                Усі
+              </button>
+            </li>
+            <li class="portfolio-filter-item">
+              <button class="portfolio-filter-button" type="button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="portfolio-filter-item">
+              <button class="portfolio-filter-button" type="button">
+                Додатки
+              </button>
+            </li>
+            <li class="portfolio-filter-item">
+              <button class="portfolio-filter-button" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li class="portfolio-filter-item">
+              <button class="portfolio-filter-button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <!--Перелік робіт-->
+          <ul class="portfolio-examples list">
+            <li class="portfolio-examples-item">
+              <img
+                src="./images/project1.jpg"
+                alt="Вебсайт, на якому фото з командою"
+                width="370"
+              />
+              <div class="portfolio-examples-card">
+                <h3 class="portfolio-examples-title">Технокряк</h3>
+                <p class="portfolio-examples-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-examples-item">
+              <img
+                src="./images/project2.jpg"
+                alt="Постер гри в баскетбол"
+                width="370"
+              />
+              <div class="portfolio-examples-card">
+                <h3 class="portfolio-examples-title">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="portfolio-examples-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-examples-item">
+              <img
+                src="./images/project3.jpg"
+                alt="Лого ресторану"
+                width="370"
+              />
+              <div class="portfolio-examples-card">
+                <h3 class="portfolio-examples-title">Ресторан Seafood</h3>
+                <p class="portfolio-examples-text">Додаток</p>
+              </div>
+            </li>
+            <li class="portfolio-examples-item">
+              <img src="./images/project4.jpg" alt="Навушники" width="370" />
+              <div class="portfolio-examples-card">
+                <h3 class="portfolio-examples-title">Проєкт Prime</h3>
+                <p class="portfolio-examples-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-examples-item">
+              <img src="./images/project5.jpg" alt="Коробки" width="370" />
+              <div class="portfolio-examples-card">
+                <h3 class="portfolio-examples-title">Проєкт Boxes</h3>
+                <p class="portfolio-examples-text">Додаток</p>
+              </div>
+            </li>
+            <li class="portfolio-examples-item">
+              <img
+                src="./images/project6.jpg"
+                alt="Монітор з картинкою сайту"
+                width="370"
+              />
+              <div class="portfolio-examples-card">
+                <h3 lang="en" class="portfolio-examples-title">
+                  Inspiration has no Borders
+                </h3>
+                <p class="portfolio-examples-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-examples-item">
+              <img
+                src="./images/project7.jpg"
+                alt="Картинка з журналом"
+                width="370"
+              />
+              <div class="portfolio-examples-card">
+                <h3 class="portfolio-examples-title">
+                  Видання Limited Edition
+                </h3>
+                <p class="portfolio-examples-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-examples-item">
+              <img
+                src="./images/project8.jpg"
+                alt="Картинка з ярликом"
+                width="370"
+              />
+              <div class="portfolio-examples-card">
+                <h3 class="portfolio-examples-title">Проєкт LAB</h3>
+                <p class="portfolio-examples-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-examples-item">
+              <img
+                src="./images/project9.jpg"
+                alt="Картинка, на якій ноутбук із додатком для бізнесу"
+                width="370"
+              />
+              <div class="portfolio-examples-card">
+                <h3 lang="en" class="portfolio-examples-title">
+                  Growing Business
+                </h3>
+                <p class="portfolio-examples-text">Додаток</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Підвал сайту-->
+    <footer class="footer">
+      <div class="container">
+        <a class="logo" lang="en" href="./index.html"
+          ><span class="accent-logo">Web</span>Studio</a
+        >
+        <address class="footer-contacts">
+          <ul class="footer-contacts-list list">
+            <li class="footer-contacts-item">
+              <a
+                class="footer-contacts-link map"
+                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
