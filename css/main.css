@@ -390,7 +390,7 @@ height: 18px;}
   border-radius: 4px;
 }
 
-.clients-item-link:hover {
+.clients-item-link:hover, .clients-item-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -523,7 +523,7 @@ height: 18px;}
 }
 
 .footer-box {
-  padding-left: 70px;
+  margin-left: 70px;
 }
 
 .container.footer-container {
