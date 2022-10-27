@@ -34,6 +34,11 @@ ul,
 ol {
   margin: 0;
   padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
@@ -59,7 +64,7 @@ img {
   line-height: 1.71;
 }
 
-/*утилітарний клас container*/
+/*загальний клас container*/
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -92,11 +97,6 @@ img {
   margin: -1px;
 }
 
-/*утилітраний клас для списків*/
-.list {
-  list-style: none;
-}
-
 /*властивості для логотипу*/
 .logo {
   color: var(--logo-color);
@@ -104,21 +104,12 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
   letter-spacing: 0.03em;
-}
-
-/*загальний клас для посилань хедера*/
-.link {
-  text-decoration: none;
 }
 
 /*-------------- HEADER ---------------------*/
 /*клас для хедера*/
 .header {
-  padding-top: 25px;
-  padding-bottom: 24px;
-
   border-bottom: 1px solid #ececec;
 }
 
@@ -143,6 +134,8 @@ img {
 }
 
 .header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -165,17 +158,13 @@ img {
   align-items: inherit;
 }
 
-.contacts-item {
-height: 18px;}
-
 /*задаємо колір для посилань контактів*/
 .contacts-link {
-  height: 100%;
   display: flex;
   gap: 10px;
   align-items: center;
 
-  color: var(--primary-text-color);
+  color: inherit;
 }
 
 /*задаємо колір для іконок контактів*/
@@ -390,7 +379,8 @@ height: 18px;}
   border-radius: 4px;
 }
 
-.clients-item-link:hover, .clients-item-link:focus {
+.clients-item-link:hover,
+.clients-item-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
