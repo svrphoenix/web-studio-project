@@ -154,7 +154,7 @@ img {
 
   height: 4px;
   width: 100%;
-  display: block;
+  display: block; 
 
   background-color: var(--accent-color);
   border-radius: 2px;
@@ -182,7 +182,7 @@ img {
   gap: 10px;
   align-items: center;
 
-  color: inherit;
+  color: currentColor;
 }
 
 /*задаємо колір для іконок контактів*/
@@ -448,7 +448,6 @@ img {
 .portfolio-filter-button {
   padding: 6px 25px;
 
-  cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
   font-family: inherit;
@@ -683,7 +682,6 @@ img {
   width: 30px;
   height: 30px;
 
-  cursor: pointer;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
