@@ -154,7 +154,7 @@ img {
 
   height: 4px;
   width: 100%;
-  display: block; 
+  display: block;
 
   background-color: var(--accent-color);
   border-radius: 2px;
@@ -307,7 +307,6 @@ img {
   position: relative;
 }
 
-/* ?????????????????????????????????????????? */
 .spec-label {
   position: absolute;
   width: 100%;
@@ -502,7 +501,6 @@ img {
   overflow: hidden;
 }
 
-/* ???????????????????????????? */
 .portfolio-examples-description {
   position: absolute;
   top: 0;
@@ -517,7 +515,8 @@ img {
   background-color: var(--accent-color);
 }
 
-.portfolio-examples-link:hover .portfolio-examples-description {
+.portfolio-examples-link:hover .portfolio-examples-description,
+.portfolio-examples-link:focus .portfolio-examples-description {
   transform: translateY(0);
 }
 
