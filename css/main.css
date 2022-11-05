@@ -761,9 +761,7 @@ img {
 .modal-input {
   display: inline-block;
   width: 100%;
-  padding-top: 12px;
-  padding-left: 42px;
-  padding-bottom: 12px;
+  padding: 12px 12px 12px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -806,6 +804,7 @@ img {
 .modal-textarea:focus {
   border-color: var(--accent-color);
 }
+
 .modal-input:focus + .modal-field-icon {
   fill: var(--accent-color);
 }
