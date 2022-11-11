@@ -1,0 +1,76 @@
+.navigation {
+  display: flex;
+  align-items: inherit;
+}
+
+/*список навігації*/
+.menu {
+  display: flex;
+  align-items: inherit;
+  margin-left: 93px;
+  gap: 50px;
+}
+
+.menu__link {
+  position: relative;
+}
+
+.menu__link--current {
+  color: var(--accent-color);
+}
+
+.menu__link--current::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+
+  height: 4px;
+  width: 100%;
+  display: block;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: currentColor;
+}
+
+.contacts__icon {
+  fill: currentColor;
+}
+
+/*-------------- HEADER ---------------------*/
+/*клас для хедера*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: var(--header-height);
+  z-index: 100;
+  background-color: inherit;
+  border-bottom: 1px solid #ececec;
+}
+
+/*загальний контейнер хедера*/
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  margin-left: 93px;
+}
+
