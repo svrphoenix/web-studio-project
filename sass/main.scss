@@ -1,13 +1,15 @@
-@import './utils/vars';
+@import './abstracts/vars';
+@import './abstracts/mixins';
+@import './abstracts/paceholders';
 @import './base/reset';
-@import './utils/hidden';
+@import './base/hidden';
 @import './base/common';
 @import './components/container';
+@import './components/link-main';
+@import './components/navigation';
 @import './components/logo';
-@import './components/title';
 @import './components/button';
 @import './components/socials';
-@import './components/link-main';
 @import './layouts/header';
 @import './layouts/hero';
 @import './components/modal';
@@ -16,3 +18,4 @@
 @import './layouts/team';
 @import './layouts/clients';
 @import './layouts/footer';
+@import './pages/portfolio';

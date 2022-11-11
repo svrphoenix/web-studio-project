@@ -11,4 +11,12 @@ body {
 
   letter-spacing: 0.03em;
   line-height: 1.71;
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include font(null, 36px, calc(42 / 36), null);
+    text-align: center;
+    color: var(--title-text-color);
+  }
 }

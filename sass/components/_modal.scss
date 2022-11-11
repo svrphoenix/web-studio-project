@@ -25,39 +25,34 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scaleX(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-title {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
+  &-title {
+    margin-bottom: 12px;
+    @include font(700, 20px, calc(23 / 20), 0.03em);
+    text-align: center;
+    color: var(--title-text-color);
+  }
 
-.modal-field:not(:first-child) {
-  margin-top: 10px;
-}
+  &-field:not(:first-child) {
+    margin-top: 10px;
+  }
 
-.input-label {
-  display: inline-block;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
-}
+  &-input {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 12px 12px 42px;
 
-.modal-input {
-  display: inline-block;
-  width: 100%;
-  padding: 12px 12px 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &-input-label {
+    display: inline-block;
+    @include font(null, 12px, calc(14 / 12), 0.01em);
+    margin-bottom: 4px;
+  }
 }
 
 .input-wrapper {
@@ -145,15 +140,15 @@
   opacity: 1;
 }
 
+.modal-checkbox:focus + .modal-checkbox-custom {
+  border-color: var(--accent-color);
+}
+
 .modal-form-submit {
   display: block;
   margin: 30px auto 0 auto;
   padding: 10px 52px;
 }
-
-/* .modal-form-submit:hover {
-  background-color: #188ce8;
-} */
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleX(0);
@@ -174,16 +169,17 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  
+  &-icon {
+    fill: currentColor;
+  }
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  }
 
-.modal-close-icon {
-  fill: currentColor;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  color: var(--accent-color);
-}
 
 .backdrop.is-hidden {
   opacity: 0;
