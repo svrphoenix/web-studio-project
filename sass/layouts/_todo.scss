@@ -1,5 +1,11 @@
 .todo {
+  display: none;
   padding-top: 0;
+
+  @include desktop {
+    display: block;
+  }
+
 }
 
 .directions-list {
@@ -17,15 +23,14 @@
   &__label {
     position: absolute;
     width: 100%;
-    transform: translateY(-100%);
-    padding-top: 27px;
-    padding-bottom: 27px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
+    padding: 27px 0;
+
+    @include font(700, 14px, calc(16 / 14), null);
     text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
     background-color: rgba(47, 48, 58, 0.8);
+    
+    transform: translateY(-100%);
   }
 }

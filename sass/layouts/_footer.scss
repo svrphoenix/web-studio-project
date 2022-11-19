@@ -1,21 +1,39 @@
 .footer {
   padding: 60px 0;
-
+  letter-spacing: 0.03em;
   background-color: var(--footer-background-color);
 
   &__container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center;
+      row-gap: 60px;
+      column-gap: 165px;
+    }
+
+    @include desktop {
+      gap: 93px;
+      justify-content: space-between;
+      text-align: start;
+    }
   }
 
   &__contacts {
     margin-top: 20px;
 
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(null, null, calc(24 / 14), null);
 
     &-item:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
+      // margin-bottom: 9px;
     }
 
     &-link {
@@ -35,16 +53,15 @@
 }
 
 .box {
-  margin-left: 70px;
+  // margin-left: 70px;
 
   &__title {
     margin-bottom: 20px;
 
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, null, calc(16 / 14), null);
     text-transform: uppercase;
     color: var(--white-color);
+
     &--form-label {
       display: block;
     }
@@ -57,19 +74,27 @@
 }
 
 .form {
-  margin-left: auto;
 
   &__wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+    }
+    
+    @include desktop {
+      flex-direction: row;
+  }
   }
 
   &__input {
     padding: 15px 16px;
-    width: 358px;
+    width: 100%;
 
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
+    @include font(null, 16px, calc(20 / 16), 0.03em);
     color: var(--white-color);
     background-color: var(--footer-background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -77,6 +102,14 @@
 
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include tablet {
+      width: 450px;
+    }
+
+    @include desktop {
+      width: 358px;
+    }
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
@@ -92,9 +125,15 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: 12px;
+    margin-top: 20px;
+    // margin-left: 12px;
     padding: 10px 28px;
-
+    
+    @include desktop {
+      margin-top: 0;
+      margin-left: 12px;
+      
+    }
     &-icon {
       fill: currentColor;
     }

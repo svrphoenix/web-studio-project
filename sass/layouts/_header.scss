@@ -9,8 +9,7 @@
   border-bottom: 1px solid #ececec;
 
   &__container {
-    display: flex;
-    align-items: center;
+    @extend %flex-centered;
   }
 
   &__menu {
