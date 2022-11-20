@@ -19,10 +19,14 @@
 
   &__title {
     margin-bottom: 10px;
+    text-align: center;
 
     @include font(null, 14px, calc(16 / 14), null);
     text-transform: uppercase;
     color: var(--title-text-color);
+    @include tablet {
+      text-align:start;
+    }
   }
 
   &__box {

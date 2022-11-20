@@ -3,16 +3,17 @@
   top: 0;
   left: 0;
   right: 0;
-  min-height: var(--header-height);
   z-index: 100;
+
   background-color: inherit;
   border-bottom: 1px solid #ececec;
 
   &__container {
     @extend %flex-centered;
-  }
-
-  &__menu {
-    margin-left: 93px;
+    justify-content: space-between;
+    min-height: 60px;
+    @include tablet {
+      min-height: 80px;
+    }
   }
 }

@@ -25,3 +25,14 @@ body {
     color: var(--title-text-color);
   }
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
