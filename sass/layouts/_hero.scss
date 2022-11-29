@@ -24,6 +24,7 @@
 
     @include tablet {
       max-width: 768px; 
+
       background-image: var(--bg-gradient),
       url('../images/hero-tablet.jpg');
       @include density-2x {
@@ -36,6 +37,7 @@
       max-width: 1600px;
       padding-top: 200px;
       padding-bottom: 200px;
+
       background-image: var(--bg-gradient),
       url('../images/hero.jpg');
       @include density-2x {
@@ -48,6 +50,7 @@
   &__title {
     margin: 0 auto 30px auto;
     max-width: 100%;
+
     @include font(900, 18px, calc(29 / 18), 0.06em);
     text-align: center;
     text-transform: uppercase;
@@ -68,6 +71,7 @@
     display: block;
     margin: 0 auto;
     padding: 10px 24px;
+    
     @include desktop {
       padding: 10px 32px;
     }

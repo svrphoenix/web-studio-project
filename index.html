@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Шапка сайту-->
     <header class="header">
       <div class="container header__container">
         <a class="logo logo--dark" lang="en" href="./index.html"
@@ -75,7 +74,7 @@
       </div>
       <div class="mob-menu is-hidden" data-menu>
         <button type="button" class="menu-close" data-menu-close>
-          <svg class="menu-close-icon" width="40" height="40">
+          <svg class="menu-close-icon" width="24" height="24">
             <use href="./images/icons.svg#menu-close"></use>
           </svg>
         </button>
@@ -772,7 +771,12 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
+        <button
+          type="button"
+          class="modal-close"
+          aria-label="close"
+          data-modal-close
+        >
           <svg class="modal-close-icon" width="11" height="11">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -837,7 +841,7 @@
               name="declaration-checkbox"
             />
             <span class="modal-checkbox-custom">
-              <svg class="modal-checkbox-icon" width="15" height="16">
+              <svg class="modal-checkbox-icon" width="16" height="15">
                 <use href="./images/icons.svg#checked"></use></svg
             ></span>
             <span class="checkbox-label"

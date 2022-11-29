@@ -26,6 +26,7 @@
     border-radius: 4px;
     border-color: transparent;
     box-shadow: none;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,7 +52,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  // gap: var(--examples-gap);
 
   &__item {
     width: 100%;
@@ -95,7 +95,6 @@
 
   &__title {    
     @include font(null, 18px, calc(36 / 18), 0.06em);
-
     color: var(--title-text-color);
   }
 
@@ -130,6 +129,7 @@
     @include desktop {
       padding: 63px 24px;
     }
+    
     .portfolio-examples__link:hover &,
     .portfolio-examples__link:focus & {
       transform: translateY(0);

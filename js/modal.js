@@ -4,11 +4,12 @@
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     body: document.querySelector('body'),
-    input: document.querySelector('.modal_input'),
+    input: document.querySelector('#user-name'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  // refs.input.focus();
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');

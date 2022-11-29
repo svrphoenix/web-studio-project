@@ -4,7 +4,8 @@
 
   @include desktop {
     @include font(null, 26px, calc(31 / 26), null);
-}
+  }
+
   &__accent {
     color: var(--accent-color);
   }

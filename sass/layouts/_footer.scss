@@ -18,22 +18,21 @@
       row-gap: 60px;
       column-gap: 165px;
     }
-
+    
     @include desktop {
-      gap: 93px;
+      gap: 94px;
       justify-content: space-between;
       text-align: start;
     }
   }
 
   &__contacts {
-    margin-top: 20px;
+    margin-top: 28px;
 
     @include font(null, null, calc(24 / 14), null);
 
     &-item:not(:last-child) {
-      margin-bottom: 8px;
-      // margin-bottom: 9px;
+      margin-bottom: 12px;
     }
 
     &-link {
@@ -53,7 +52,6 @@
 }
 
 .box {
-  // margin-left: 70px;
 
   &__title {
     margin-bottom: 20px;
@@ -74,7 +72,6 @@
 }
 
 .form {
-
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -126,8 +123,7 @@
     align-items: center;
     gap: 10px;
     margin-top: 20px;
-    // margin-left: 12px;
-    padding: 10px 28px;
+    padding: 10px 27px;
     
     @include desktop {
       margin-top: 0;
