@@ -5,8 +5,10 @@
   }
 
   &--header {
-    margin-left: 88px;
     @include tablet {
+      margin-left: 88px;
+    }
+    @include desktop {
       margin-left: 93px;
     }
   }
@@ -43,13 +45,12 @@
 .contacts {
   display: none;
   margin-left: auto;
-  
+
   @include tablet {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
   @include desktop {
     flex-direction: row;
     align-items: center;
@@ -58,13 +59,14 @@
 
   &__link {
     @extend %flex-centered;
-    gap: 10px;
-
     color: var(--primary-text-color);
+
     @include tablet {
+      gap: 8px;
       padding: 1px 0;
     }
     @include desktop {
+      gap: 10px;
       padding: 32px 0;
     }
   }
@@ -114,7 +116,7 @@
 
 .menu-open {
   padding: 0;
-  border: 0;
+  margin-left: auto;
   width: 40px;
   height: 40px;
   @extend %full-flex-centered;

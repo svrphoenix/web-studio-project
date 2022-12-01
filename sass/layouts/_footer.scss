@@ -18,7 +18,7 @@
       row-gap: 60px;
       column-gap: 165px;
     }
-    
+
     @include desktop {
       gap: 94px;
       justify-content: space-between;
@@ -52,7 +52,6 @@
 }
 
 .box {
-
   &__title {
     margin-bottom: 20px;
 
@@ -81,14 +80,14 @@
     @include tablet {
       flex-direction: column;
     }
-    
+
     @include desktop {
       flex-direction: row;
-  }
+    }
   }
 
   &__input {
-    padding: 15px 16px;
+    padding: 14px 15px;
     width: 100%;
 
     @include font(null, 16px, calc(20 / 16), 0.03em);
@@ -123,12 +122,11 @@
     align-items: center;
     gap: 10px;
     margin-top: 20px;
-    padding: 10px 27px;
-    
+    padding: 10px 28px;
+
     @include desktop {
       margin-top: 0;
       margin-left: 12px;
-      
     }
     &-icon {
       fill: currentColor;

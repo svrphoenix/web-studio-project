@@ -93,14 +93,14 @@
     border-color: #eeeeee;
   }
 
-  &__title {    
+  &__title {
     @include font(null, 18px, calc(36 / 18), 0.06em);
     color: var(--title-text-color);
   }
 
   &__text {
     margin-top: 4px;
-    
+
     @include font(null, 16px, calc(30 / 16), null);
     color: var(--primary-text-color);
   }
@@ -109,7 +109,7 @@
     position: absolute;
     top: 0;
 
-    padding: 0;
+    padding: 20px;
     height: 100%;
 
     @include font(null, 18px, calc(28 / 18), null);
@@ -119,7 +119,7 @@
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: visible;
-    
+
     @include mobile {
       padding: 77px 24px;
     }
@@ -129,7 +129,7 @@
     @include desktop {
       padding: 63px 24px;
     }
-    
+
     .portfolio-examples__link:hover &,
     .portfolio-examples__link:focus & {
       transform: translateY(0);
