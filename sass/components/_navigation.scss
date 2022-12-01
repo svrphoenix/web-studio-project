@@ -76,6 +76,20 @@
   }
 }
 
+.icon-smartphone {
+  @include desktop {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.icon-envelope {
+  @include desktop {
+    width: 16px;
+    height: 12px;
+  }
+}
+
 .mob-menu {
   position: fixed;
   top: 0;

@@ -225,6 +225,20 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
 .mob-menu {
   position: fixed;
   top: 0;
