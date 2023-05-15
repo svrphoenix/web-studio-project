@@ -1,0 +1,38 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include font(null, 36px, calc(42 / 36), null);
+    text-align: center;
+    color: var(--title-text-color);
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+

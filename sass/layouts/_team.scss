@@ -1,0 +1,49 @@
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.people-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  text-align: center;
+
+  &__item {
+    width: 100%;
+
+    background-color: var(--primary-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @include tablet {
+      @include calcWidth(2, 30px);
+    }
+
+    @include desktop {
+      @include calcWidth(4, 30px);
+    }
+
+  }
+}
+
+.member-card {
+  padding: 30px 0;
+
+  &__name {
+    @include font(500, 16px, calc(19 / 16), null);
+    color: var(--title-text-color);
+  }
+
+  &__position {
+    margin-top: 10px;
+
+    @include font(null, 16px, calc(19 / 16), null);
+  }
+
+  &__soc-list {
+    margin-top: 16px;
+  }
+}

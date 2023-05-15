@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: inherit;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    @extend %flex-centered;
+    min-height: 60px;
+
+    @include tablet {
+      min-height: 80px;
+    }
+  }
+}

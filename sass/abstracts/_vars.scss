@@ -1,0 +1,17 @@
+:root {
+  --examples-gap: 30px;
+  --bg-gradient: linear-gradient(
+    to bottom,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  --white-color: #ffffff;
+  --primary-background-color: var(--white-color);
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-dark-color: #000000;
+  --footer-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --button-color: #188ce8;
+}

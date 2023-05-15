@@ -1,0 +1,35 @@
+.todo {
+  display: none;
+
+  @include desktop {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+.directions-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    min-width: 370px;
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    width: 100%;
+    padding: 27px 0;
+
+    @include font(700, 14px, calc(16 / 14), null);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    
+    transform: translateY(-100%);
+  }
+}
