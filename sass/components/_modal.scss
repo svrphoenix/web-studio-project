@@ -117,7 +117,7 @@
 
 .modal-checkbox-field {
   position: relative;
-  @extend %flex-centered;
+  @extend %flex-y-centered;
   justify-content: flex-start;
   margin-top: 14px;
 
@@ -133,7 +133,7 @@
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  @extend %full-flex-centered;
+  @extend %flex-full-centered;
 
   border: 1px solid #2a2a2a;
   border-radius: 2px;
@@ -201,7 +201,7 @@
   right: 8px;
   top: 8px;
 
-  @extend %full-flex-centered;
+  @extend %flex-full-centered;
   width: 30px;
   height: 30px;
 

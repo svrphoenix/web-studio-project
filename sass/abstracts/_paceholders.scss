@@ -1,11 +1,10 @@
-%flex-centered {
+%flex-y-centered {
   display: flex;
   align-items: center;
 }
 
-%full-flex-centered {
+%flex-full-centered {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
