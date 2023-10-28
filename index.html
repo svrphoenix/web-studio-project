@@ -67,7 +67,9 @@
       <section class="hero-section section">
         <div class="overlay">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--Секція Властивості-->
@@ -132,25 +134,34 @@
           <h2 class="spec-title section-title">Чим ми займаємося</h2>
           <ul class="spec-list">
             <li class="spec-item">
-              <img
-                src="./images/image1.jpg"
-                alt="Програмування, розробка додатків"
-                width="370"
-              />
+              <div class="spec-thumb">
+                <img
+                  src="./images/image1.jpg"
+                  alt="Програмування, розробка додатків"
+                  width="370"
+                />
+                <p class="spec-label">Десктопні додатки</p>
+              </div>
             </li>
             <li class="spec-item">
-              <img
-                src="./images/image2.jpg"
-                alt="Оптимізація сайтів під мобільні пристрої"
-                width="370"
-              />
+              <div class="spec-thumb">
+                <img
+                  src="./images/image2.jpg"
+                  alt="Оптимізація сайтів під мобільні пристрої"
+                  width="370"
+                />
+                <p class="spec-label">Мобільні додатки</p>
+              </div>
             </li>
             <li class="spec-item">
-              <img
-                src="./images/image3.jpg"
-                alt="Стилізація та оформлення"
-                width="370"
-              />
+              <div class="spec-thumb">
+                <img
+                  src="./images/image3.jpg"
+                  alt="Стилізація та оформлення"
+                  width="370"
+                />
+                <p class="spec-label">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -558,5 +569,21 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector('.header')
+        .getBoundingClientRect();
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
