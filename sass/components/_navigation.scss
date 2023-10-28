@@ -1,0 +1,46 @@
+.navigation {
+  @extend %flex-centered;
+}
+
+.menu {
+  @extend %flex-centered;
+  margin-left: 93px;
+  gap: 50px;
+
+  &__link {
+    position: relative;
+
+    &--current {
+      color: var(--accent-color);
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+
+        height: 4px;
+        width: 100%;
+        display: block;
+
+        background-color: var(--accent-color);
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.contacts {
+  @extend %flex-centered;
+  gap: 30px;
+  margin-left: auto;
+
+  &__link {
+    @extend %flex-centered;
+    gap: 10px;
+
+    color: var(--primary-text-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
