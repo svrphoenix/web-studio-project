@@ -23,31 +23,40 @@
   <body>
     <!--Шапка сайту-->
     <header class="header">
-      <div class="container flex-container">
+      <div class="container header-container">
         <nav class="header-nav">
           <a class="logo" lang="en" href="./index.html"
             ><span class="accent-logo">Web</span>Studio</a
           >
-          <ul class="header-list list">
+          <ul class="header-list">
             <li class="header-item">
-              <a class="link" href="./index.html">Студія</a>
+              <a class="header-link" href="./index.html">Студія</a>
             </li>
             <li class="header-item">
-              <a class="link current" href="./portfolio.html">Портфоліо</a>
+              <a class="header-link current" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
-            <li class="header-item"><a class="link" href="#">Контакти</a></li>
+            <li class="header-item">
+              <a class="header-link" href="#">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
+        <ul class="header-contacts">
           <li class="contacts-item">
             <a
-              class="header-contacts-link link"
+              class="header-link contacts-link"
               href="mailto:info@devstudio.com"
+            >
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts-item">
-            <a class="header-contacts-link link" href="tel:+380961111111"
+            <a class="header-link contacts-link" href="tel:+380961111111">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -62,7 +71,7 @@
             Наші роботи
           </h2>
           <!--Фільтр робіт-->
-          <ul class="portfolio-filter list">
+          <ul class="portfolio-filter">
             <li class="portfolio-filter-item">
               <button
                 class="portfolio-filter-button active-button"
@@ -93,105 +102,144 @@
             </li>
           </ul>
           <!--Перелік робіт-->
-          <ul class="portfolio-examples list">
+          <ul class="portfolio-examples">
             <li class="portfolio-examples-item">
-              <img
-                src="./images/project1.jpg"
-                alt="Вебсайт, на якому фото з командою"
-                width="370"
-              />
-              <div class="portfolio-examples-card">
-                <h3 class="portfolio-examples-title">Технокряк</h3>
-                <p class="portfolio-examples-text">Веб-сайт</p>
-              </div>
+              <a class="portfolio-examples-link" href="#">
+                <img
+                  src="./images/project1.jpg"
+                  alt="Вебсайт, на якому фото з командою"
+                  width="370"
+                />
+                <div class="portfolio-examples-card">
+                  <h3 class="portfolio-examples-title">Технокряк</h3>
+                  <p class="portfolio-examples-text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
             <li class="portfolio-examples-item">
-              <img
-                src="./images/project2.jpg"
-                alt="Постер гри в баскетбол"
-                width="370"
-              />
-              <div class="portfolio-examples-card">
-                <h3 class="portfolio-examples-title">
-                  Постер New Orlean vs Golden Star
-                </h3>
-                <p class="portfolio-examples-text">Дизайн</p>
-              </div>
+              <a class="portfolio-examples-link" href="#"
+                ><div class="portfolio-examples-thumb">
+                  <img
+                    src="./images/project2.jpg"
+                    alt="Постер гри в баскетбол"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio-examples-card">
+                  <h3 class="portfolio-examples-title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="portfolio-examples-text">Дизайн</p>
+                </div></a
+              >
             </li>
             <li class="portfolio-examples-item">
-              <img
-                src="./images/project3.jpg"
-                alt="Лого ресторану"
-                width="370"
-              />
-              <div class="portfolio-examples-card">
-                <h3 class="portfolio-examples-title">Ресторан Seafood</h3>
-                <p class="portfolio-examples-text">Додаток</p>
-              </div>
+              <a class="portfolio-examples-link" href="#"
+                ><div class="portfolio-examples-thumb">
+                  <img
+                    src="./images/project3.jpg"
+                    alt="Лого ресторану"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio-examples-card">
+                  <h3 class="portfolio-examples-title">Ресторан Seafood</h3>
+                  <p class="portfolio-examples-text">Додаток</p>
+                </div></a
+              >
             </li>
             <li class="portfolio-examples-item">
-              <img src="./images/project4.jpg" alt="Навушники" width="370" />
-              <div class="portfolio-examples-card">
-                <h3 class="portfolio-examples-title">Проєкт Prime</h3>
-                <p class="portfolio-examples-text">Маркетинг</p>
-              </div>
+              <a class="portfolio-examples-link" href="#"
+                ><div class="portfolio-examples-thumb">
+                  <img
+                    src="./images/project4.jpg"
+                    alt="Навушники"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio-examples-card">
+                  <h3 class="portfolio-examples-title">Проєкт Prime</h3>
+                  <p class="portfolio-examples-text">Маркетинг</p>
+                </div></a
+              >
             </li>
             <li class="portfolio-examples-item">
-              <img src="./images/project5.jpg" alt="Коробки" width="370" />
-              <div class="portfolio-examples-card">
-                <h3 class="portfolio-examples-title">Проєкт Boxes</h3>
-                <p class="portfolio-examples-text">Додаток</p>
-              </div>
+              <a class="portfolio-examples-link" href="#"
+                ><div class="portfolio-examples-thumb">
+                  <img src="./images/project5.jpg" alt="Коробки" width="370" />
+                </div>
+                <div class="portfolio-examples-card">
+                  <h3 class="portfolio-examples-title">Проєкт Boxes</h3>
+                  <p class="portfolio-examples-text">Додаток</p>
+                </div></a
+              >
             </li>
             <li class="portfolio-examples-item">
-              <img
-                src="./images/project6.jpg"
-                alt="Монітор з картинкою сайту"
-                width="370"
-              />
-              <div class="portfolio-examples-card">
-                <h3 lang="en" class="portfolio-examples-title">
-                  Inspiration has no Borders
-                </h3>
-                <p class="portfolio-examples-text">Веб-сайт</p>
-              </div>
+              <a class="portfolio-examples-link" href="#"
+                ><div class="portfolio-examples-thumb">
+                  <img
+                    src="./images/project6.jpg"
+                    alt="Монітор з картинкою сайту"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio-examples-card">
+                  <h3 lang="en" class="portfolio-examples-title">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="portfolio-examples-text">Веб-сайт</p>
+                </div></a
+              >
             </li>
             <li class="portfolio-examples-item">
-              <img
-                src="./images/project7.jpg"
-                alt="Картинка з журналом"
-                width="370"
-              />
-              <div class="portfolio-examples-card">
-                <h3 class="portfolio-examples-title">
-                  Видання Limited Edition
-                </h3>
-                <p class="portfolio-examples-text">Дизайн</p>
-              </div>
+              <a class="portfolio-examples-link" href="#"
+                ><div class="portfolio-examples-thumb">
+                  <img
+                    src="./images/project7.jpg"
+                    alt="Картинка з журналом"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio-examples-card">
+                  <h3 class="portfolio-examples-title">
+                    Видання Limited Edition
+                  </h3>
+                  <p class="portfolio-examples-text">Дизайн</p>
+                </div></a
+              >
             </li>
             <li class="portfolio-examples-item">
-              <img
-                src="./images/project8.jpg"
-                alt="Картинка з ярликом"
-                width="370"
-              />
-              <div class="portfolio-examples-card">
-                <h3 class="portfolio-examples-title">Проєкт LAB</h3>
-                <p class="portfolio-examples-text">Маркетинг</p>
-              </div>
+              <a class="portfolio-examples-link" href="#"
+                ><div class="portfolio-examples-thumb">
+                  <img
+                    src="./images/project8.jpg"
+                    alt="Картинка з ярликом"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio-examples-card">
+                  <h3 class="portfolio-examples-title">Проєкт LAB</h3>
+                  <p class="portfolio-examples-text">Маркетинг</p>
+                </div></a
+              >
             </li>
+
             <li class="portfolio-examples-item">
-              <img
-                src="./images/project9.jpg"
-                alt="Картинка, на якій ноутбук із додатком для бізнесу"
-                width="370"
-              />
-              <div class="portfolio-examples-card">
-                <h3 lang="en" class="portfolio-examples-title">
-                  Growing Business
-                </h3>
-                <p class="portfolio-examples-text">Додаток</p>
-              </div>
+              <a class="portfolio-examples-link" href="#"
+                ><div class="portfolio-examples-thumb">
+                  <img
+                    src="./images/project9.jpg"
+                    alt="Картинка, на якій ноутбук із додатком для бізнесу"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio-examples-card">
+                  <h3 lang="en" class="portfolio-examples-title">
+                    Growing Business
+                  </h3>
+                  <p class="portfolio-examples-text">Додаток</p>
+                </div></a
+              >
             </li>
           </ul>
         </div>
@@ -199,33 +247,68 @@
     </main>
     <!--Підвал сайту-->
     <footer class="footer">
-      <div class="container">
-        <a class="logo" lang="en" href="./index.html"
-          ><span class="accent-logo">Web</span>Studio</a
-        >
-        <address class="footer-contacts">
-          <ul class="footer-contacts-list list">
-            <li class="footer-contacts-item">
-              <a
-                class="footer-contacts-link map"
-                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+      <div class="container footer-container">
+        <div>
+          <a class="logo" lang="en" href="./index.html"
+            ><span class="accent-logo">Web</span>Studio</a
+          >
+          <address class="footer-contacts">
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-link map"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a class="footer-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a class="footer-contacts-link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-box">
+          <p class="footer-box-text">Приєднуйтесь</p>
+          <ul class="footer-soc-list">
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link" aria-label="instagram">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-contacts-item">
-              <a class="footer-contacts-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link" aria-label="twitter">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-contacts-item">
-              <a class="footer-contacts-link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link" aria-label="facebook">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link" aria-label="linkedin">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
