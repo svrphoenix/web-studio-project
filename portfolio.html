@@ -29,9 +29,7 @@
         <nav class="navigation navigation--header">
           <ul class="navigation__menu">
             <li>
-              <a class="link-main navigation__link" href="./index.html"
-                >Студія</a
-              >
+              <a class="link-main navigation__link" href="./index.html">Студія</a>
             </li>
             <li>
               <a
@@ -41,18 +39,13 @@
               >
             </li>
             <li>
-              <a class="link-main navigation__link" href="#studio-contacts"
-                >Контакти</a
-              >
+              <a class="link-main navigation__link" href="#studio-contacts">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts">
           <li>
-            <a
-              class="link-main contacts__link"
-              href="mailto:info@devstudio.com"
-            >
+            <a class="link-main contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon icon-envelope" width="14" height="10">
                 <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com</a
@@ -60,11 +53,7 @@
           </li>
           <li>
             <a class="link-main contacts__link" href="tel:+380961111111">
-              <svg
-                class="contacts__icon icon-smartphone"
-                width="10"
-                height="14"
-              >
+              <svg class="contacts__icon icon-smartphone" width="10" height="14">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -86,28 +75,20 @@
           <nav class="mob-menu-nav">
             <ul class="mob-menu-list">
               <li>
-                <a class="link-main mob-menu-link" href="./index.html"
-                  >Студія</a
-                >
+                <a class="link-main mob-menu-link" href="./index.html">Студія</a>
               </li>
               <li>
-                <a class="link-main mob-menu-link" href="./portfolio.html"
-                  >Портфоліо</a
-                >
+                <a class="link-main mob-menu-link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li>
-                <a class="link-main mob-menu-link" href="#studio-contacts"
-                  >Контакти</a
-                >
+                <a class="link-main mob-menu-link" href="#studio-contacts">Контакти</a>
               </li>
             </ul>
           </nav>
           <div class="mob-contacts-container">
             <ul class="mob-contacts">
               <li>
-                <a
-                  class="link-main mob-contacts-email"
-                  href="mailto:info@devstudio.com"
+                <a class="link-main mob-contacts-email" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -119,38 +100,22 @@
             </ul>
             <ul class="mob-soc-list">
               <li class="mob-soc-item">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="mob-soc-link"
+                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc-link"
                   >Instagram
                 </a>
               </li>
               <li class="mob-soc-item">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="mob-soc-link"
+                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc-link"
                   >Twitter
                 </a>
               </li>
               <li class="mob-soc-item">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="mob-soc-link"
+                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc-link"
                   >Facebook
                 </a>
               </li>
               <li class="mob-soc-item">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="mob-soc-link"
+                <a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-soc-link"
                   >Linkedin
                 </a>
               </li>
@@ -167,49 +132,39 @@
           <!--Фільтр робіт-->
           <ul class="filter">
             <li>
-              <button
-                class="filter__button filter__button--active"
-                type="button"
-              >
+              <button class="filter__button filter__button--active" type="button" data-filter="all">
                 Усі
               </button>
             </li>
             <li>
-              <button class="filter__button" type="button">Веб-сайти</button>
+              <button class="filter__button" type="button" data-filter="site">Веб-сайти</button>
             </li>
             <li>
-              <button class="filter__button" type="button">Додатки</button>
+              <button class="filter__button" type="button" data-filter="app">Додатки</button>
             </li>
             <li>
-              <button class="filter__button" type="button">Дизайн</button>
+              <button class="filter__button" type="button" data-filter="design">Дизайн</button>
             </li>
             <li>
-              <button class="filter__button" type="button">Маркетинг</button>
+              <button class="filter__button" type="button" data-filter="marketing">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!--Перелік робіт-->
           <ul class="portfolio-examples">
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="site">
               <a class="portfolio-examples__link" href="#">
                 <div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project1.jpg    1x,
-                        ./images/project1-2x.jpg 2x
-                      "
+                      srcset="./images/project1.jpg 1x, ./images/project1-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project1-tablet.jpg    1x,
-                        ./images/project1-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project1-tablet.jpg 1x, ./images/project1-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project1-mobile.jpg    1x,
-                        ./images/project1-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project1-mobile.jpg 1x, ./images/project1-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
                     <img
                       src="./images/project1-mobile.jpg"
@@ -217,9 +172,9 @@
                       width="450"
                   /></picture>
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
@@ -228,27 +183,18 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="design">
               <a class="portfolio-examples__link" href="#"
                 ><div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project2.jpg    1x,
-                        ./images/project2-2x.jpg 2x
-                      "
+                      srcset="./images/project2.jpg 1x, ./images/project2-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project2-tablet.jpg    1x,
-                        ./images/project2-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project2-tablet.jpg 1x, ./images/project2-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project2-mobile.jpg    1x,
-                        ./images/project2-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project2-mobile.jpg 1x, ./images/project2-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
                     <img
                       src="./images/project2-mobile.jpg"
@@ -256,50 +202,36 @@
                       width="450"
                   /></picture>
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
-                  <h3 class="portfolio-examples__title">
-                    Постер New Orlean vs Golden Star
-                  </h3>
+                  <h3 class="portfolio-examples__title">Постер New Orlean vs Golden Star</h3>
                   <p class="portfolio-examples__text">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="app">
               <a class="portfolio-examples__link" href="#"
                 ><div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project3.jpg    1x,
-                        ./images/project3-2x.jpg 2x
-                      "
+                      srcset="./images/project3.jpg 1x, ./images/project3-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project3-tablet.jpg    1x,
-                        ./images/project3-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project3-tablet.jpg 1x, ./images/project3-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project3-mobile.jpg    1x,
-                        ./images/project3-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project3-mobile.jpg 1x, ./images/project3-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
-                    <img
-                      src="./images/project3-mobile.jpg"
-                      alt="Лого ресторану"
-                      width="450"
+                    <img src="./images/project3-mobile.jpg" alt="Лого ресторану" width="450"
                   /></picture>
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
@@ -308,37 +240,25 @@
                 </div></a
               >
             </li>
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="marketing">
               <a class="portfolio-examples__link" href="#"
                 ><div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project4.jpg    1x,
-                        ./images/project4-2x.jpg 2x
-                      "
+                      srcset="./images/project4.jpg 1x, ./images/project4-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project4-tablet.jpg    1x,
-                        ./images/project4-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project4-tablet.jpg 1x, ./images/project4-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project4-mobile.jpg    1x,
-                        ./images/project4-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project4-mobile.jpg 1x, ./images/project4-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
-                    <img
-                      src="./images/project4-mobile.jpg"
-                      alt="Навушники"
-                      width="450"
+                    <img src="./images/project4-mobile.jpg" alt="Навушники" width="450"
                   /></picture>
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
@@ -347,37 +267,25 @@
                 </div></a
               >
             </li>
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="app">
               <a class="portfolio-examples__link" href="#"
                 ><div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project5.jpg    1x,
-                        ./images/project5-2x.jpg 2x
-                      "
+                      srcset="./images/project5.jpg 1x, ./images/project5-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project5-tablet.jpg    1x,
-                        ./images/project5-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project5-tablet.jpg 1x, ./images/project5-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project5-mobile.jpg    1x,
-                        ./images/project5-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project5-mobile.jpg 1x, ./images/project5-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
-                    <img
-                      src="./images/project5-mobile.jpg"
-                      alt="Коробки"
-                      width="450"
+                    <img src="./images/project5-mobile.jpg" alt="Коробки" width="450"
                   /></picture>
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
@@ -386,27 +294,18 @@
                 </div></a
               >
             </li>
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="site">
               <a class="portfolio-examples__link" href="#"
                 ><div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project6.jpg    1x,
-                        ./images/project6-2x.jpg 2x
-                      "
+                      srcset="./images/project6.jpg 1x, ./images/project6-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project6-tablet.jpg    1x,
-                        ./images/project6-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project6-tablet.jpg 1x, ./images/project6-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project6-mobile.jpg    1x,
-                        ./images/project6-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project6-mobile.jpg 1x, ./images/project6-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
                     <img
                       src="./images/project6-mobile.jpg"
@@ -414,91 +313,63 @@
                       width="450"
                   /></picture>
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
-                  <h3 lang="en" class="portfolio-examples__title">
-                    Inspiration has no Borders
-                  </h3>
+                  <h3 lang="en" class="portfolio-examples__title">Inspiration has no Borders</h3>
                   <p class="portfolio-examples__text">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="design">
               <a class="portfolio-examples__link" href="#"
                 ><div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project7.jpg    1x,
-                        ./images/project7-2x.jpg 2x
-                      "
+                      srcset="./images/project7.jpg 1x, ./images/project7-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project7-tablet.jpg    1x,
-                        ./images/project7-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project7-tablet.jpg 1x, ./images/project7-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project7-mobile.jpg    1x,
-                        ./images/project7-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project7-mobile.jpg 1x, ./images/project7-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
-                    <img
-                      src="./images/project7-mobile.jpg"
-                      alt="Картинка з журналом"
-                      width="450"
+                    <img src="./images/project7-mobile.jpg" alt="Картинка з журналом" width="450"
                   /></picture>
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
-                  <h3 class="portfolio-examples__title">
-                    Видання Limited Edition
-                  </h3>
+                  <h3 class="portfolio-examples__title">Видання Limited Edition</h3>
                   <p class="portfolio-examples__text">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="marketing">
               <a class="portfolio-examples__link" href="#">
                 <div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project8.jpg    1x,
-                        ./images/project8-2x.jpg 2x
-                      "
+                      srcset="./images/project8.jpg 1x, ./images/project8-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project8-tablet.jpg    1x,
-                        ./images/project8-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project8-tablet.jpg 1x, ./images/project8-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project8-mobile.jpg    1x,
-                        ./images/project8-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project8-mobile.jpg 1x, ./images/project8-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
-                    <img
-                      src="./images/project8-mobile.jpg"
-                      alt="Картинка з ярликом"
-                      width="450"
+                    <img src="./images/project8-mobile.jpg" alt="Картинка з ярликом" width="450"
                   /></picture>
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
@@ -507,27 +378,18 @@
                 </div></a
               >
             </li>
-            <li class="portfolio-examples__item">
+            <li class="portfolio-examples__item" data-filter="app">
               <a class="portfolio-examples__link" href="#"
                 ><div class="portfolio-examples__thumb">
                   <picture>
                     <source
-                      srcset="
-                        ./images/project9.jpg    1x,
-                        ./images/project9-2x.jpg 2x
-                      "
+                      srcset="./images/project9.jpg 1x, ./images/project9-2x.jpg 2x"
                       media="(min-width: 1200px)" />
                     <source
-                      srcset="
-                        ./images/project9-tablet.jpg    1x,
-                        ./images/project9-tablet-2x.jpg 2x
-                      "
+                      srcset="./images/project9-tablet.jpg 1x, ./images/project9-tablet-2x.jpg 2x"
                       media="(min-width: 768px)" />
                     <source
-                      srcset="
-                        ./images/project9-mobile.jpg    1x,
-                        ./images/project9-mobile-2x.jpg 2x
-                      "
+                      srcset="./images/project9-mobile.jpg 1x, ./images/project9-mobile-2x.jpg 2x"
                       media="(min-width: 320px)" />
                     <img
                       src="./images/project9-mobile.jpg"
@@ -536,15 +398,13 @@
                   /></picture>
 
                   <p class="portfolio-examples__description">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio-examples__card">
-                  <h3 lang="en" class="portfolio-examples__title">
-                    Growing Business
-                  </h3>
+                  <h3 lang="en" class="portfolio-examples__title">Growing Business</h3>
                   <p class="portfolio-examples__text">Додаток</p>
                 </div></a
               >
@@ -572,16 +432,12 @@
                 >
               </li>
               <li class="footer__contacts-item">
-                <a
-                  class="footer__contacts-link"
-                  href="mailto:info@devstudio.com"
+                <a class="footer__contacts-link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="footer__contacts-item">
-                <a class="footer__contacts-link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a class="footer__contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -667,5 +523,6 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
