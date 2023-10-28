@@ -5,21 +5,17 @@ const refs = {
 
 refs.filter.addEventListener('click', filterSelection);
 
-function filterSelection(evt) {
-  let filterType;
-  if (evt.target.tagName === 'BUTTON') {
-    if (!evt.target.classList.contains('filter__button--active'))
-      evt.target.classList.add('filter__button--active');
-    filterType = evt.target.dataset.filter;
-  }
-
-  const buttons = refs.filter.getElementsByClassName('filter__button');
-  for (i = 0; i < buttons.length; i += 1) {
-    if (buttons[i] !== evt.target) {
-      buttons[i].classList.remove('filter__button--active');
+function filterSelection(e) {
+  if (e.target.tagName === 'BUTTON') {
+    const filterType = e.target.dataset.filter;
+    const buttons = refs.filter.getElementsByClassName('filter__button');
+    for (i = 0; i < buttons.length; i += 1) {
+      if (buttons[i] !== e.target) {
+        buttons[i].classList.remove('filter__button--active');
+      } else e.target.classList.add('filter__button--active');
     }
+    filterGalleryItems(filterType);
   }
-  filterGalleryItems(filterType);
 }
 
 function filterGalleryItems(selectedType) {
