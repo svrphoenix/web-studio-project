@@ -1,3 +1,3 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
-GoIT Домашнє завдання #7
+GoIT Домашнє завдання #8

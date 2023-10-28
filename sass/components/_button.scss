@@ -1,9 +1,5 @@
 .button {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
+  @include font(700, 16px, calc(30 / 16), 0.06em);
 
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -14,6 +10,6 @@
 
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: var(--button-color);
   }
 }
